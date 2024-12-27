@@ -1,15 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { ContentComponent } from "./content/content.component";
-import { NavbarComponent } from "./navbar/navbar.component";
-import { SidebarComponent } from "./sidebar/sidebar.component";
+import { NavbarComponent } from './navbar/navbar.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, ContentComponent, NavbarComponent, SidebarComponent],
+  imports: [RouterOutlet, NavbarComponent, SidebarComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
 })
-export class AppComponent {
-  title = 'ze';
-}
+export class AppComponent {}
